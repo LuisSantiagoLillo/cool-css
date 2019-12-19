@@ -11,3 +11,143 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* You can add global styles to this file, and also import other style files */
+
+
+/* UNIVERSAL SELECTOR */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+      font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #777;
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: rgba(16, 124, 16, 0.6); */
+    background: rgba(113, 73, 177, 0.6);
+    border-radius: 5px;
+}
+
+
+/* ****************** */
+
+
+/* ELEMENTS */
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+H4 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+
+/* ****************** */
+
+body {
+    /* border: 6px solid blue; */
+    height: 100vh;
+    font-weight: 400;
+    justify-content: center;
+	align-items: center;
+    /* background-color: #26de81; */
+    background-color: #AC7DF8;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    font-size: 2rem;
+}
+
+button,
+label,
+input,
+textarea {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
+
+.content {
+    margin: 4rem;
+    padding: 4rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}

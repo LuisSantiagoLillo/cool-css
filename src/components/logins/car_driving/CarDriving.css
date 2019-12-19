@@ -1,0 +1,161 @@
+.container-car-driving {
+	height: 100vh;
+    background: url(../../../assets/img/bg-city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: bottom left;
+	animation: driving 20s linear infinite;
+}
+
+.motorbike {
+	position: absolute;
+	left: 20%;
+	bottom: 55px;
+	width: 150px;
+}
+
+@keyframes driving {
+	from { background-position: bottom left; }
+	to { background-position: bottom right; }
+}
+
+
+.container-form {
+    
+    border-radius:40px;
+	margin-top: 70px;
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	/*perspective: 200px;*/
+	box-shadow: 10px 1rem 3rem rgba(0, 0, 0, 0.9);
+}
+
+
+.title_app {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1.4rem;
+    
+}
+
+  .btn {
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+
+#jumpMotorbike {
+    position: absolute;
+	left: 23.5%;
+	bottom: 16px;
+}
+
+.jump {
+    animation: animate-jump 2s linear infinite;
+}
+
+@keyframes animate-jump {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20%{
+        transform: rotate(-40deg);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    70%{
+        transform: rotate(40deg);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.circle-large {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 100%;
+    bottom: 60px;
+    left: -34px;
+    
+    animation: animate-obstacule 4s linear infinite;
+}
+
+@keyframes animate-obstacule {
+    0% {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+}
+
+
+
+#smoke {
+	position: absolute;
+	z-index: 3;
+	width: 1px; height: 160px;
+	left: 23.5%; bottom: 100px;
+}
+
+
+/* smoke balls */
+
+#smoke span { 
+    display: block;
+      position: absolute;
+      bottom: -35px; left: 50%; margin-left:-20px;
+      height: 0px; width: 0px;
+      border: 35px solid #4b4b4b;
+      border-radius: 35px;
+      left: -14px; opacity: 0;
+      transform: scale(0.2);
+  }
+  
+  /* Smoke animation */
+  
+  @keyframes smokeL {
+      0%   { transform: scale(0.2) translate(0, 0) }
+      10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+      100% { opacity: 0; transform: scale(1) translate(-20px, -130px) }
+  }
+  
+  @keyframes smokeR {
+      0%   { transform: scale(0.2) translate(0, 0) }
+      10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+      100% { opacity: 0; transform: scale(1) translate(20px, -130px) }
+  }
+  
+  #smoke .s0 { animation: smokeL 10s 0s infinite }
+  #smoke .s1 { animation: smokeR 10s 1s infinite }
+  #smoke .s2 { animation: smokeL 10s 2s infinite }
+  #smoke .s3 { animation: smokeR 10s 3s infinite }
+  #smoke .s4 { animation: smokeL 10s 4s infinite }
+  #smoke .s5 { animation: smokeR 10s 5s infinite }
+  #smoke .s6 { animation: smokeL 10s 6s infinite }
+  #smoke .s7 { animation: smokeR 10s 7s infinite }
+  #smoke .s8 { animation: smokeL 10s 8s infinite }
+  #smoke .s9 { animation: smokeR 10s 9s infinite }
+
+

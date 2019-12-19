@@ -1,0 +1,969 @@
+.content-buttons {
+    height: 100%;
+    border-radius:40px;
+    background-color: #ffffff;
+    margin-top: 70px;
+    box-shadow: 10px 1rem 3rem rgba(0, 0, 0, 0.7);
+    /*
+    justify-content: center;
+	align-items: center;
+    */
+}
+
+button {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 15px 0 0;
+}
+
+
+/* ======================
+   CREATIVE HOVER EFFECTS
+   ====================== */
+
+   .btn-hover {
+    text-decoration: none;
+    color: #262626;
+    font-family: sans-serif;
+    border: 5px solid #262626;
+    /* padding: 40px 80px; */
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    z-index: 1; /*IMPORTANTE - Posiciono el boton adelante para poder poner los :before en una capa intermedia entre el boton y el contenedor*/
+}
+
+
+/* background-botton-left */
+
+.background-botton-left:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff200;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+.background-botton-left:hover::before {
+    transform: rotate(0deg);
+}
+
+
+/* background-top-right */
+
+.background-top-right:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff200;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: top right;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+.background-top-right:hover::before {
+    transform: rotate(0deg);
+}
+
+
+/* background-fromToptoBotton */
+
+.background-fromToptoBotton:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff200;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.background-fromToptoBotton:hover:before {
+    transform: translateY(0);
+}
+
+.background-fromToptoBotton:hover {
+    color: #ffffff;
+}
+
+
+/* background-fromLeftToRight */
+
+.background-fromLeftToRight:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff200;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.background-fromLeftToRight:hover:before {
+    transform: translateX(0);
+}
+
+.background-fromLeftToRight:hover {
+    color: #ffffff;
+}
+
+
+/* background-fromRightToLeft */
+
+.background-fromRightToLeft:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff200;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.background-fromRightToLeft:hover:before {
+    transform: translateX(0);
+}
+
+.background-fromRightToLeft:hover {
+    color: #ffffff;
+}
+
+
+/* background-cross */
+
+.background-cross:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff200;
+    z-index: -1;
+    transform: rotateX(90deg);
+    transition: all 1s;
+}
+
+.background-cross:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff200;
+    z-index: -1;
+    transform: rotateY(90deg);
+    transition: all 1s;
+}
+
+.background-cross:hover:before {
+    transform: translateX(0);
+}
+
+.background-cross:hover:after {
+    transform: translateY(0);
+}
+
+.background-cross:hover {
+    color: #ffffff;
+}
+
+
+/* background-substitute */
+
+.background-substitute:before {
+    content: 'YEAH!';
+    color: white;
+    background-color: #F44336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all .5s;
+}
+
+.background-substitute:hover:before {
+    transform: translateY(0);
+}
+
+
+/* background-flash */
+
+.background-flash:hover {
+    background-color: #F44336;
+}
+
+.background-flash:before {
+    content: '';
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.5s;
+}
+
+.background-flash:hover:before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+
+/* background-spacing */
+
+.background-spacing {
+    color: #E1332D;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    transition: all 0.5s;
+}
+
+.background-spacing:before {
+    content: '';
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    letter-spacing: -2px;
+    font-weight: 300;
+    transition: all 0.5s;
+}
+
+.background-spacing:hover:before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+.background-spacing:hover {
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+
+/* background-replace */
+
+.background-replace {
+    background-color: #000000;
+}
+
+.background-replace:before {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.background-replace:after {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: translate(-100%, 100%);
+}
+
+.background-replace:hover:before {
+    transform: translate(100%, -100%);
+}
+
+.background-replace:hover:after {
+    transform: translate(0, 0);
+}
+
+
+/* background-zoom */
+
+.background-zoom:before {
+    content: 'Hover me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(5);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.background-zoom:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+/* background-blob */
+
+.background-blob:hover {
+    color: white;
+}
+
+.background-blob:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    z-index: -1;
+    border-radius: 50% 50% 0% 0%;
+    height: 0%;
+    transition: all 0.5s;
+}
+
+.background-blob:hover:before {
+    height: 190%;
+}
+
+/* background-blob2 */
+
+.background-blob2:hover {
+    color: white;
+}
+
+.background-blob2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    z-index: -1;
+    border-radius: 0% 0% 50% 50%;
+    height: 0%;
+    transition: all 0.5s;
+}
+
+.background-blob2:hover:before {
+    height: 190%;
+}
+
+/* background-multiple */
+
+.background-multiple:hover {
+    color: white;
+}
+
+.background-multiple:before {
+    content: "Hover Me";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2ecc71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+.background-multiple:after {
+    content: "Hover Me";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: bottom;
+    transform: rotateX(270deg);
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+}
+
+.background-multiple:hover:before,
+.background-multiple:hover:after {
+    transform: rotateX(0deg);
+}
+
+
+/* background-boomerang */
+
+.background-boomerang {
+    color: transparent !important;
+    background: #000000;
+    border: 3px solid #ff0;
+
+}
+
+.background-boomerang:before {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.background-boomerang:hover:before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+}
+
+.background-boomerang:after {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0) rotateY(0deg);
+    opacity: 0;
+}
+
+.background-boomerang:hover:after {
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+}
+
+
+/* background-boomerang2 */
+
+.background-boomerang2 {
+    color: #ff0 !important;
+    background: #000000;
+    border: 2px solid #ff0;
+
+}
+
+.background-boomerang2:before {
+    content: 'Hover Me';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.background-boomerang2:hover:before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+}
+
+.background-boomerang2:after {
+    content: 'Hover ';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0) rotateY(0deg);
+    opacity: 0;
+}
+
+/* shaking-hover */
+.shaking-hover:hover {
+	border: 4px solid #F44336;
+    color: #F44336 !important;
+    animation: shake 0.3s linear 1;
+    transition: all 0.3s
+}
+
+@keyframes shake {
+	33% { transform: rotate(10deg); }
+
+	66% { transform: rotate(-10deg); }
+
+	100% { transform: rotate(10deg); }
+}
+
+/* animated-flash */
+.animated-flash {
+    color: black !important;
+}
+
+.animated-flash:before {
+	content: '';
+	background-color: #F44336;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	transform: skew(-15deg);
+	animation: moving 1.2s linear infinite;
+	transition: all .5s;
+}
+
+@keyframes moving {
+
+	from { left: -120px }
+
+	to 	{ left: 100% }
+
+}
+
+.animated-flash:hover:before {
+	width: 100%;
+	transform: skew(0deg);
+	animation: none;
+}
+/*******************************************/
+
+/* ICON HOVER ROUNDED */
+.icon-hover-rounded {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .icon-hover-rounded li {
+    list-style-type: none;
+    width: 120px;
+    height: 120px;
+    margin: 0 20px;
+    border:2px solid #0a3d62;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /*IMPORTANTE - Posiciono el boton adelante para poder poner los :before en una capa intermedia entre el boton y el contenedor*/
+  }
+  
+  .icon-hover-rounded li i {
+    font-size: 48px;
+    color: #0a3d62;
+    transition: 0.5s;
+  }
+  
+  .icon-hover-rounded li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a3d62;
+    border-radius: 50%;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .icon-hover-rounded li:hover:before {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  
+  .icon-hover-rounded li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    border:2px dashed #2e86de;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+  
+  .icon-hover-rounded li:hover:after {
+    opacity: 1;
+    animation: rotating 10s linear infinite;
+  }
+  
+  @keyframes rotating {
+    0% { transform:scale(0.92) rotate(0deg); }
+    100% { transform:scale(0.92) rotate(360deg); }
+  }
+  
+  .icon-hover-rounded li:hover i {
+    color: white;
+  }
+
+  /* BUTTON PULSE */
+  .button-pulse {
+    width: 100px;
+    height: 100px;
+    background-color: #58ea00;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 48px;
+    position: relative;
+  }
+
+  .button-pulse:before, .button-pulse:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border: 1px solid #2e86de;
+    border-radius: 50%;
+    animation: pulse 1.5s linear infinite;
+  }
+  
+  .button-pulse:after {
+    animation-delay: 0.5s;
+  }
+  
+  .button-pulse:hover:before, .button-pulse:hover:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border: 5px solid #58ea00;
+    border-radius: 50%;
+    animation: pulse 1.5s linear infinite;
+  }
+  
+  .button-pulse:hover:after {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(0.5); opacity: 0 }
+    50% { transform: scale(1); opacity: 1 }
+    100% { transform: scale(1.2); opacity: 0 }
+  }
+
+  /* ANIMATED SMOKY */
+  .smoky-button {
+    background-color: #4b4b4b;
+  }
+
+  .animated-smoky {
+	margin: 0;
+	padding: 0;
+    display: flex;
+}
+
+.animated-smoky li {
+	list-style: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	transition: 2s;
+}
+
+.smoky-button:hover .animated-smoky .right{  
+    animation: smokyRigth 2s linear;
+}
+
+@keyframes smokyRigth {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(45deg) translateY(-40px);
+        opacity: 0;
+        filter: blur(20px);
+     }
+    90% { 
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  .smoky-button:hover .animated-smoky .top {  
+    animation: smokyTop 2s ease-in;
+    color: red;
+}
+
+  @keyframes smokyTop {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-40px);
+        opacity: 0;
+        filter: blur(20px);
+     }
+    100% { 
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  .smoky-button:hover .animated-smoky .left {  
+    animation: smokyLeft 2s linear;
+}
+
+  @keyframes smokyLeft {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(-45deg) translateY(-40px);
+        opacity: 0;
+        filter: blur(20px);
+     }
+    90% { 
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+    }
+  }
+
+.animated-smoky li:nth-child(1) {
+	transition-delay: 0;
+}
+
+.animated-smoky li:nth-child(2) {
+	transition-delay: 0.4s;
+}
+
+.animated-smoky li:nth-child(3) {
+	transition-delay: 0.8s;
+}
+
+.animated-smoky li:nth-child(4) {
+	transition-delay: 1.2s;
+}
+
+.animated-smoky li:nth-child(5) {
+	transition-delay: 1.6s;
+}
+
+/* ANIMATED FILL */
+.animated-fill {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    color: #ccc;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .animated-fill :before {
+    content: "HOVER";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #262626;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s
+  }
+  
+  .container-fill :hover:before {
+    width: 100%;
+  }
+
+  /* SOCIAL MEDIA */
+  .container-icons{
+    text-align: center;
+    display: flex;
+  }
+  .icon{
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    color: #10ac84;
+    box-shadow: 0 5px 15px -5px #00000070;
+    position: relative;
+    overflow: hidden;
+  }
+  .icon i{
+    line-height: 90px;
+    font-size: 25px;
+    transition: 0.2s;
+  }
+  .icon:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+  }
+  .icon::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #10ac84;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+  }
+  .icon:hover::before{
+    animation: animation 0.7s 1 forwards;
+  }
+  @keyframes animation {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 15%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+
+/* HOVER CREATED */
+.hover-created {
+    color: #ff0;
+    background-color: transparent;
+ 
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.5s;
+    position: relative;
+  }
+  
+  .hover-created:before,
+  .hover-created:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #ff0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .hover-created:before {
+    left: 0;
+    box-shadow: -100px 0 0 #ff0;
+  }
+  
+  .hover-created:after {
+    right: 0;
+    box-shadow: 100px 0 0 #ff0;
+  }
+  
+  .hover-created:hover:before {
+    left: 50%;
+    box-shadow: 30px 0 0 #ff0;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+  }
+  
+  .hover-created:hover:after {
+    right: 50%;
+    box-shadow: -30px 0 0 #ff0;
+    transform: translateX(50%) translateY(-50%);
+    opacity: 1;
+  }
+  
+  .span-created {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0;
+    border-radius: 8px;
+    transform: scale(0);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  
+  .hover-created:hover .span-created {
+    transform: scale(1);
+    transition-delay: 0.4s;
+  }
+  
+  .hover-created:hover {
+    color: #262626;
+    transition-delay: 0.4s;
+  }
+  
+/*******************************************/
+
