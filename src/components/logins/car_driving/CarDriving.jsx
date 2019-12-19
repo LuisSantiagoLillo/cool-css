@@ -1,11 +1,27 @@
 import React, {Component} from 'react';
 import './CarDriving.css';
+import Swal from "sweetalert2";  
+
 
 class CarDriving extends Component {
 
-    state = {
-    }
-
+    constructor() {  
+        super();  
+        this.showAlert = this.showAlert.bind(this);  
+    }  
+  
+    showAlert() {  
+        Swal.fire({
+            title: 'This is only a login interface, there is not any logic inside the button.',
+            showClass: {
+              popup: 'animated fadeInDown faster'
+            },
+            hideClass: {
+              popup: 'animated fadeOutUp faster'
+            }
+        })
+    } 
+    
 
     render() {
 
@@ -26,9 +42,9 @@ class CarDriving extends Component {
             }
         }
 
-
         const circleLarge = '<div class="circle-large"></div>';
         const buttonJump = '<button type="button" id="jumpMotorbike" class="btn btn-primary" onClick={jump}>JUMP</button>';
+
 
         return(
             <div className="container-car-driving">
@@ -53,12 +69,18 @@ class CarDriving extends Component {
                     <div className="row">
                         <div className="col-12">
                             <div class="box mt-5">
-                                <form className="signup-form" action="index.html" method="post">
+                                <form className="signup-form">
                                     <h1>Motor Insurances</h1>
                                     <input type="email" placeholder="Email" className="txtb"/>
                                     <input type="password" placeholder="Password" className="txtb"/>
-                                    <input type="button" value="Sign In" className="signup-btn"/>
-                                    <a href="#">Or create account</a>
+                                    <input type="button" value="Sign In" className="signup-btn"
+                                        onClick={this.showAlert}
+                                    /> 
+
+                                    
+                                    <a href="#"
+                                        onClick={this.showAlert}
+                                    >Or create account</a>
                                 </form>
                             </div>
                         </div>

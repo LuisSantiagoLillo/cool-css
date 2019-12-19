@@ -31,6 +31,7 @@
     border: none;
     font-family: "montserrat",sans-serif;
     color: #ffffff;
+    font-size: 2rem;
   }
 
   .signup-form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
