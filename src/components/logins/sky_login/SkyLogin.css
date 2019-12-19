@@ -8,6 +8,10 @@
     background: linear-gradient(to bottom, #000000 0%, #5788fe 100%);
 }
 
+.form-control {
+    font-size: 2rem;
+}
+
 label,
 .btn,
 small,
@@ -26,7 +30,7 @@ label {
 }
 
 small {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 input {
