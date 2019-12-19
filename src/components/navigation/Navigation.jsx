@@ -13,31 +13,31 @@ class Navigation extends Component {
 
         return(
         <Fragment>
-            <div class="navigation">
-                <input type="checkbox" class="navigation__checkbox" id="navi-toggle"></input>
+            <div className="navigation">
+                <input type="checkbox" className="navigation__checkbox" id="navi-toggle"></input>
 
-                <label for="navi-toggle" class="navigation__button">
-                    <span class="navigation__icon">&nbsp;</span>
+                <label for="navi-toggle" className="navigation__button">
+                    <span className="navigation__icon">&nbsp;</span>
                 </label>
 
-                <div class="navigation__background">&nbsp;</div>
+                <div className="navigation__background">&nbsp;</div>
 
-                <nav class="navigation__nav">
-                    <ul class="navigation__list">
-                        <li class="navigation__item">
-                            <Link to='/skyLogin' onClick={unCheck} class="navigation__link">Sky Theme</Link>
+                <nav className="navigation__nav">
+                    <ul className="navigation__list">
+                        <li className="navigation__item">
+                            <Link to='/skyLogin' onClick={unCheck} className="navigation__link">Sky Theme</Link>
                         </li>
-                        <li class="navigation__item">
-                            <Link to='/carDriving' onClick={unCheck} class="navigation__link">Drive Theme</Link>
+                        <li className="navigation__item">
+                            <Link to='/carDriving' onClick={unCheck} className="navigation__link">Drive Theme</Link>
                         </li>
-                        <li class="navigation__item">
-                            <Link to='/images' onClick={unCheck} class="navigation__link">Images Styles</Link>
+                        <li className="navigation__item">
+                            <Link to='/images' onClick={unCheck} className="navigation__link">Images Styles</Link>
                         </li>
-                        <li class="navigation__item">
-                            <Link to='/buttonsHover' onClick={unCheck} class="navigation__link">Buttons Styles</Link>
+                        <li className="navigation__item">
+                            <Link to='/buttonsHover' onClick={unCheck} className="navigation__link">Buttons Styles</Link>
                         </li>
-                        <li class="navigation__item">
-                            <Link to='/loading' onClick={unCheck} class="navigation__link">Loading Styles</Link>
+                        <li className="navigation__item">
+                            <Link to='/loading' onClick={unCheck} className="navigation__link">Loading Styles</Link>
                         </li>
                     </ul>
                 </nav>

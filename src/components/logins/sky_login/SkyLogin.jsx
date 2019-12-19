@@ -11,34 +11,34 @@ class SkyLogin extends Component {
     render() {
 
         return(
-            <div class="">
-                <div class="landscape">
+            <div className="">
+                <div className="landscape">
                     <form>
-                        <div class="text-center">
-                            <h1 class="title_app">- DREAMS -</h1>
+                        <div className="text-center">
+                            <h1 className="title_app">- DREAMS -</h1>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com"></input>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com"></input>
+                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******"></input>
+                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="******"></input>
                         </div>
                 
-                        <button type="button" class="btn btn-primary btn-block mt-5">Submit</button>
+                        <button type="button" className="btn btn-primary btn-block mt-5">Submit</button>
                     </form>
                 </div>
-                <div class="filter"></div>
+                <div className="filter"></div>
 
         
-                <div class="animation-area">
-                    <div class="moon-area">
-                        <div class="moon"></div>
+                <div className="animation-area">
+                    <div className="moon-area">
+                        <div className="moon"></div>
                     </div>
 
-                    <ul class="box-area">
+                    <ul className="box-area">
                         <li></li>
                         <li></li>
                         <li></li>

@@ -11,35 +11,35 @@ class Loadings extends Component {
     render() {
 
         return(
-            <div class="content content-loadings">
-                <div class="m-2">
-                    <div class="loading-heart"></div>
+            <div className="content content-loadings">
+                <div className="m-2">
+                    <div className="loading-heart"></div>
                     <h2>Loadings with CSS animation</h2>
                 </div>
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
 
-                        <div class="col-12 m-5">
-                            <div class="container-loading-floating">
-                            <div class="loading-floating" data-text="LOADING!">LOADING!</div>
+                        <div className="col-12 m-5">
+                            <div className="container-loading-floating">
+                            <div className="loading-floating" data-text="LOADING!">LOADING!</div>
                             </div>
                         </div>
 
 
-                        <div class="col-12 m-5">
-                            <div class="container-loading-rotate">
-                                <h1 class="loading-rotate">LOADING!</h1>
+                        <div className="col-12 m-5">
+                            <div className="container-loading-rotate">
+                                <h1 className="loading-rotate">LOADING!</h1>
                             </div>
                         </div>
                         
-                        <div class="col-12 m-5">
-                            <div class="container-loading-text">
-                                <h1 class="loading-text">Loading <span></span></h1>
+                        <div className="col-12 m-5">
+                            <div className="container-loading-text">
+                                <h1 className="loading-text">Loading <span></span></h1>
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <ul class="loading-lighting">
+                        <div className="col-12 m-5">
+                            <ul className="loading-lighting">
                                 <li>L</li>
                                 <li>O</li>
                                 <li>A</li>
@@ -51,8 +51,8 @@ class Loadings extends Component {
                             </ul>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <ul class="loading-flashing">
+                        <div className="col-12 m-5">
+                            <ul className="loading-flashing">
                                 <li>L</li>
                                 <li>O</li>
                                 <li>A</li>
@@ -64,15 +64,15 @@ class Loadings extends Component {
                             </ul>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="container-linear">
-                                <h2 class="linear-background">Loading!</h2>
+                        <div className="col-12 m-5">
+                            <div className="container-linear">
+                                <h2 className="linear-background">Loading!</h2>
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="container-moving">
-                                <ul class="loading-moving">
+                        <div className="col-12 m-5">
+                            <div className="container-moving">
+                                <ul className="loading-moving">
                                     <li>L</li>
                                     <li>O</li>
                                     <li>A</li>
@@ -84,9 +84,9 @@ class Loadings extends Component {
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="container-moving">
-                                <ul class="loading-moving2">
+                        <div className="col-12 m-5">
+                            <div className="container-moving">
+                                <ul className="loading-moving2">
                                     <li>L</li>
                                     <li>O</li>
                                     <li>A</li>
@@ -98,15 +98,15 @@ class Loadings extends Component {
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="container-changing-background">
-                                <h1 class="loading-changing-background m-2">LOADING!</h1>
+                        <div className="col-12 m-5">
+                            <div className="container-changing-background">
+                                <h1 className="loading-changing-background m-2">LOADING!</h1>
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="container-loading-smoky">
-                                <ul class="loading-smoky m-2">
+                        <div className="col-12 m-5">
+                            <div className="container-loading-smoky">
+                                <ul className="loading-smoky m-2">
                                     <li>L</li>
                                     <li>O</li>
                                     <li>A</li>
@@ -118,21 +118,21 @@ class Loadings extends Component {
                             </div>
                         </div>
                         
-                        <div class="col-12 m-5">
-                            <div class="container-loading-fill">
-                                <h1 class="loading-fill">LOADING</h1>
+                        <div className="col-12 m-5">
+                            <div className="container-loading-fill">
+                                <h1 className="loading-fill">LOADING</h1>
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="banner">
-                                <h3 class="loading-rotate2">LOADING</h3>
+                        <div className="col-12 m-5">
+                            <div className="banner">
+                                <h3 className="loading-rotate2">LOADING</h3>
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="container-bouncing-balls">
-                                <ul class="loading-bouncing-balls">
+                        <div className="col-12 m-5">
+                            <div className="container-bouncing-balls">
+                                <ul className="loading-bouncing-balls">
                                     <li></li>
                                     <li></li>
                                     <li></li>
@@ -142,9 +142,9 @@ class Loadings extends Component {
                             </div>
                         </div>
 
-                        <div class="col-12 m-5">
-                            <div class="container-cradle-balls">
-                                <div class="cradle">
+                        <div className="col-12 m-5">
+                            <div className="container-cradle-balls">
+                                <div className="cradle">
                                     <span></span>
                                     <span></span>
                                     <span></span>

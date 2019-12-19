@@ -31,42 +31,42 @@ class CarDriving extends Component {
         const buttonJump = '<button type="button" id="jumpMotorbike" class="btn btn-primary" onClick={jump}>JUMP</button>';
 
         return(
-            <div class="container-car-driving">
+            <div className="container-car-driving">
 
-                <div class="" id="containerSmoke">
+                <div className="" id="containerSmoke">
                     <div id="smoke">
-                        <span class="s0"></span>
-                        <span class="s1"></span>
-                        <span class="s2"></span>
-                        <span class="s3"></span>
-                        <span class="s4"></span>
-                        <span class="s5"></span>
-                        <span class="s6"></span>
-                        <span class="s7"></span>
-                        <span class="s8"></span>
-                        <span class="s9"></span>
+                        <span className="s0"></span>
+                        <span className="s1"></span>
+                        <span className="s2"></span>
+                        <span className="s3"></span>
+                        <span className="s4"></span>
+                        <span className="s5"></span>
+                        <span className="s6"></span>
+                        <span className="s7"></span>
+                        <span className="s8"></span>
+                        <span className="s9"></span>
                     </div>
                 </div>
 
-                <img src={require('../../../assets/img/motorbike.png')} alt="" id="motorbike" class="motorbike"/>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <form class="container-form p-5">
-                                <div class="text-center">
-                                    <h4 class="title_app">MOTOR INSURANCES</h4>
+                <img src={require('../../../assets/img/motorbike.png')} alt="" id="motorbike" className="motorbike"/>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <form className="container-form p-5">
+                                <div className="text-center">
+                                    <h4 className="title_app">MOTOR INSURANCES</h4>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com"></input>
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com"></input>
+                                    <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******"></input>
+                                    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="******"></input>
                                 </div>
                         
-                                <button type="button" class="btn btn-primary btn-block mt-5">Submit</button>
+                                <button type="button" className="btn btn-primary btn-block mt-5">Submit</button>
                             </form>
                         </div>
                     </div>
